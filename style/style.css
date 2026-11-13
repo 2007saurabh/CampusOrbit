@@ -1,0 +1,217 @@
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #1a1a1a;
+    padding-bottom: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* --- Header Section --- */
+.header {
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 38px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+}
+
+.header h1 span {
+    color: #0066ff; /* Blue highlight */
+}
+
+/* NEW SUBTITLE STYLE */
+.header .subtitle {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+}
+
+/* --- Categories / Clubs Section --- */
+.categories-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scrollbar-width: none; /* Firefox */
+}
+        
+.categories-container::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+.category-card {
+    background-color: #eef4ff; /* Light blue background */
+    border-radius: 20px;
+    padding: 20px 15px;
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 102, 255, 0.1);
+}
+
+.category-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.category-card p {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+}
+
+/* --- Featured Section --- */
+.featured-header {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 20px 0;
+}
+
+.featured-header .bar {
+    width: 4px;
+    height: 24px;
+    background-color: #0066ff;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.featured-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* --- Carousel Section --- */
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.event-card {
+    min-width: 280px;
+    height: 380px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card:hover {
+    transform: scale(1.02);
+}
+
+/* Simulating the poster images with CSS gradients */
+.poster-1 { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); }
+.poster-2 { background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%); }
+.poster-3 { background: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%); }
+.poster-4 { background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%); }
+
+.event-content {
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+}
+
+.event-tag {
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    width: fit-content;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.event-title {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.event-club {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* --- Carousel Buttons --- */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    transition: background-color 0.2s;
+}
+
+.nav-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-btn.prev { left: -20px; }
+.nav-btn.next { right: -20px; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header h1 { font-size: 28px; }
+    .nav-btn { display: none; } /* Hide buttons on mobile, use swipe */
+    .event-card { min-width: 240px; height: 320px; }
+}

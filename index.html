@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- UPDATED TITLE -->
+    <title>CampusOrbit | College Event Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <!-- UPDATED HEADER -->
+            <h1>Welcome to <span>CampusOrbit</span></h1>
+            <p class="subtitle">Discover clubs, events, and everything happening on campus.</p>
+        </div>
+
+        <!-- Club Categories Section -->
+        <div class="categories-container">
+            <div class="category-card">
+                <div class="category-icon">💻</div>
+                <p>Tech & Coding</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">🎭</div>
+                <p>Cultural & Arts</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">⚽</div>
+                <p>Sports</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">💼</div>
+                <p>Business & E-Cell</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">🔬</div>
+                <p>Science & Robotics</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">🎵</div>
+                <p>Music & Dance</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">🤝</div>
+                <p>Social & NSS</p>
+            </div>
+        </div>
+
+        <!-- Featured Events Section -->
+        <div class="featured-header">
+            <div class="bar"></div>
+            <h2>Featured Events</h2>
+        </div>
+
+        <!-- Carousel Section -->
+        <div class="carousel-wrapper">
+            <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+            
+            <div class="carousel" id="eventCarousel">
+                
+                <!-- Event Card 1 -->
+                <div class="event-card poster-1">
+                    <div class="event-content">
+                        <span class="event-tag">Hackathon</span>
+                        <h3 class="event-title">Hack The Future 2026</h3>
+                        <p class="event-club">By Coding Club</p>
+                    </div>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div class="event-card poster-2">
+                    <div class="event-content">
+                        <span class="event-tag">Fest</span>
+                        <h3 class="event-title">Amplify Music Fest</h3>
+                        <p class="event-club">By Cultural Committee</p>
+                    </div>
+                </div>
+
+                <!-- Event Card 3 -->
+                <div class="event-card poster-3">
+                    <div class="event-content">
+                        <span class="event-tag">Workshop</span>
+                        <h3 class="event-title">AI & Machine Learning Bootcamp</h3>
+                        <p class="event-club">By Tech Society</p>
+                    </div>
+                </div>
+
+                <!-- Event Card 4 -->
+                <div class="event-card poster-4">
+                    <div class="event-content">
+                        <span class="event-tag">Competition</span>
+                        <h3 class="event-title">Case Study Challenge</h3>
+                        <p class="event-club">By E-Cell</p>
+                    </div>
+                </div>
+
+                <!-- Event Card 5 -->
+                <div class="event-card poster-1">
+                    <div class="event-content">
+                        <span class="event-tag">Workshop</span>
+                        <h3 class="event-title">Web Dev Bootcamp</h3>
+                        <p class="event-club">By Coding Club</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="nav-btn next" id="nextBtn">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
