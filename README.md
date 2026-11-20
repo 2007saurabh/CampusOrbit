@@ -17,6 +17,13 @@ Built with a focus on clean architecture and responsive design, CampusOrbit prov
 * **Client-Side Interactivity:** Powered by vanilla JavaScript for lightweight, dependency-free DOM manipulation.
 
 ---
+## Features Overview
+* Role-Based Access: Super Admin, College Admin, Club Moderator, Student.
+* Event Lifecycle: Create, publish, and manage events (Hackathons, Fests, Workshops).
+* Smart Registration: Auto-waitlist system with automatic promotion on cancellation.
+* QR Check-in: Unique QR code generation per student and scanner for organizers.
+* Auto-Certificates: PDF certificate generation upon attendance.
+* Team Registration: Hackathon team formation with invite codes.
 
 ## Repository Structure
 
